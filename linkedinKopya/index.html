@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linkedin</title>
-    <link rel="stylesheet" href="/bootstraplinkedinclone/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -17,14 +17,18 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">   
   </head>
-  <body class="body">
+  <body class="body" style="background-color: gainsboro;">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark navbarbg sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbarbg sticky-top mt-0 mb-0 pt-0 pb-0">
       <a class="navbar-brand" href="#"
         ><i
           class="fab fa-linkedin fa-lg"
-          style="color: #0a66c2; font-size: 2.4rem; margin-left: 3cm;"
+          style="color: #0a66c2; font-size: 2.4rem; margin-left: 270px;"
         ></i
       ></a>
       <button
@@ -36,15 +40,16 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       ></button>
-      <form class="form-inline">
+      <form class="form-inline" style="margin-right: 200px;">
         <input
           class="form-control searche"
           type="search"
           placeholder="Arama Yap"
           aria-label="Search"
         />
+        <i class="fa-solid fa-magnifying-glass"></i>
       </form>
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" style="width: 200px;">
         <ul class="navbar-nav mr-auto ml-4">
           <li class="nav-item active mr-3">
             <a class="nav-link" href="#"
@@ -56,28 +61,28 @@
           <li class="nav-item active mr-4">
             <a class="nav-link" href="#"
               ><i class="fas fa-user-friends fa-lg">
-                <div class="menutext">Ağım</div></i
+                <div class="menutext"> <h5> <strong> Ağım </strong> </h5></div></i
               >
             </a>
           </li>
           <li class="nav-item active mr-2">
             <a class="nav-link" href="#"
               ><i class="fas fa-briefcase fa-lg">
-                <div class="menutext">İş İlanları</div></i
+                <div class="menutext"><h5> <strong> İş İlanları </strong> </h5></div></i
               >
             </a>
           </li>
           <li class="nav-item active mr-1">
             <a class="nav-link" href="#"
               ><i class="fas fa-comment-dots fa-lg">
-                <div class="menutext">Mesajlaşma</div></i
+                <div class="menutext"><h5> <strong> Mesajlaşma </strong> </h5></div></i
               >
             </a>
           </li>
           <li class="nav-item active mr-1">
             <a class="nav-link" href="#"
               ><i class="fas fa-bell fa-lg">
-                <div class="menutext">Bildirimler</div></i
+                <div class="menutext"><h5> <strong> Bildirimler </strong> </h5></div></i
               >
             </a>
           </li>
@@ -98,10 +103,8 @@
                   height: 25px;
                 "
               />
-              <div
-                class="menutext"
-              >
-                Ben
+              <div class="menutext">
+                <h4> <strong>Ben</strong></h4>
               </div>
             </a>
           </li>
@@ -121,18 +124,17 @@
       </div>
     </nav>
 
-    <div>
+    <div class="container">
       <div class="row">
         <!-- sol panel -->
-        <div class="">
+        <div class="col-sm-3">
           <!-- sol panel -->
           <div class="card" style="width: 14rem">
             <div
-              class="card-header"
+              class="card-header d-flex justify-content-center"
               style="
                 background-image: url(https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Falejandrocremades%2Ffiles%2F2018%2F12%2Fbusiness-3605367_1920-1200x741.jpg);
-                height: 53px;
-              "
+                height: 53px; margin-top: 200px;"
             >
               <img
                 src="https://media-exp1.licdn.com/dms/image/C4D03AQFpMjVJ_N2wRQ/profile-displayphoto-shrink_100_100/0/1582787654653?e=1616630400&v=beta&t=C1X2NxhcN0R0GmELl1Ew7BeOoyGbwJXCw8c7lHm6XuA"
@@ -325,7 +327,7 @@
 
         <!-- orta panel -->
         <div
-          class="col-3"
+          class="col-sm-6 bg-white"
           style=""
         >
           <div class="card">
@@ -336,28 +338,28 @@
                 placeholder="Bir gönderi başlat"
               />
               <span
-                ><button class="mediatext">
+                ><button class="mediatext btn btn-outline-primary">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24" height="24" focusable="false">
   <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
 </svg><span class="ml-1 mediatext">Fotoğraf</span>
                 </button></span
               >
               <span
-                ><button class="mediatext">
+                ><button class="mediatext btn-outline-success">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24" height="24" focusable="false">
   <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
 </svg><span class="ml-1 mediatext">Video</span>
                 </button></span
               >
               <span
-                ><button class="mediatext">
+                ><button class="mediatext btn-outline-danger">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24" height="24" focusable="false">
   <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"></path>
 </svg><span class="ml-1 mediatext">Etkinlik</span>
                 </button></span
               >
               <span
-                ><button class="mediatext">
+                ><button class="mediatext btn-outline-warning">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="" width="24" height="24" focusable="false">
   <path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
 </svg><span class="ml-1 mediatext">Yazı yaz</span>
@@ -395,28 +397,28 @@
               <span class="" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;"><img src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" alt="">  958</span>
               <div class="card-footer bg-white mt-1">
                 <span
-                ><button class="ref">
+                ><button class="ref btn btn-outline-secondary">
                   <i class="far fa-thumbs-up fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Beğen</span></i
                   >
                 </button></span
               >
                               <span
-                ><button class="ref">
+                ><button class="ref btn btn-outline-secondary">
                   <i class="far fa-comment fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Yorum Yap</span></i
                   >
                 </button></span
               >
                               <span
-                ><button class="ref">
+                ><button class="btn btn-outline-secondary ref">
                   <i class="fas fa-share fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Paylaş</span></i
                   >
                 </button></span
               >
                               <span
-                ><button class="ref">
+                ><button class="ref btn btn-outline-secondary">
                   <i class="fas fa-paper-plane fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Gönder</span></i
                   >
@@ -452,28 +454,28 @@
               <span class="" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;"><img src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" alt="">  210</span>
               <div class="card-footer bg-white mt-1">
                 <span
-                ><button class="ref">
+                ><button class="ref btn btn-outline-secondary">
                   <i class="far fa-thumbs-up fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Beğen</span></i
                   >
                 </button></span
               >
                               <span
-                ><button class="ref">
+                ><button class="ref btn btn-outline-secondary">
                   <i class="far fa-comment fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Yorum Yap</span></i
                   >
                 </button></span
               >
                               <span
-                ><button class="ref">
+                ><button class="ref btn btn-outline-secondary">
                   <i class="fas fa-share fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Paylaş</span></i
                   >
                 </button></span
               >
                               <span
-                ><button class="ref">
+                ><button class="ref btn btn-outline-secondary">
                   <i class="fas fa-paper-plane fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Gönder</span></i
                   >
@@ -509,28 +511,28 @@
               <span class="" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;"><img src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" alt="">  224</span>
               <div class="card-footer bg-white mt-1">
                 <span
-                ><button class="ref">
+                ><button class="ref btn btn-outline-secondary">
                   <i class="far fa-thumbs-up fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Beğen</span></i
                   >
                 </button></span
               >
                               <span
-                ><button class="ref">
+                ><button class="ref btn btn-outline-secondary">
                   <i class="far fa-comment fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Yorum Yap</span></i
                   >
                 </button></span
               >
                               <span
-                ><button class="ref">
+                ><button class="ref btn btn-outline-secondary">
                   <i class="fas fa-share fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Paylaş</span></i
                   >
                 </button></span
               >
                               <span
-                ><button class="ref">
+                ><button class="ref btn btn-outline-secondary">
                   <i class="fas fa-paper-plane fa-md" style="font-size: 1.2rem"
                     ><span class="ml-2 mediatext">Gönder</span></i
                   >
@@ -542,7 +544,7 @@
         </div>
 
         <!-- sağ panel -->
-        <div class="">
+        <div class="col-sm-3">
           <div class="card" style="width: 19rem">
             <div class="card-header bg-white border-0">
               <span>Akışınıza ekleyin</span
@@ -559,7 +561,7 @@
                 >
                 <span class="float-right mr-3 mt-2"
                   ><button
-                    class=""
+                    class="btn btn-outline-info"
                     style="border-radius: 50px"
                   >
                     <strong>+ Takip Et</strong>
@@ -578,7 +580,7 @@
                 >
                 <span class="float-right mr-3 mt-2"
                   ><button
-                    class=""
+                    class="btn btn-outline-info"
                     style="border-radius: 50px"
                   >
                     <strong>+ Takip Et</strong>
@@ -597,7 +599,7 @@
                 >
                 <span class="float-right mr-3 mt-2"
                   ><button
-                    class=""
+                    class="btn btn-outline-info"
                     style="border-radius: 50px"
                   >
                     <strong>+ Takip Et</strong>
@@ -714,8 +716,8 @@
     </div>
     <!-- mesajlaşma -->
     <nav
-      class="navbar navbar-expand-xl navbar-light bg-dark position-sticky fixed-bottom border"
-      style="height: 50px; position: -webkit-sticky; border-radius: 5px; margin-left: auto; right: 15px;"
+      class="navbar navbar-expand-xl navbar-light bg-light position-sticky fixed-bottom border d-flex justify-content-end"
+      style="height: 50px; width: 300px; position: -webkit-sticky; border-radius: 5px; margin-left: auto; right: 15px;"
     >
       <a class="navbar-brand" href="#"
         ><img
